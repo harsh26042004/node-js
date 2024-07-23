@@ -1,0 +1,111 @@
+Q1)
+// Initialize Git repository
+git init
+
+// Create a file named script.js with a simple JavaScript function
+touch script.js
+echo "function add(a, b) { return a + b; }" > script.js
+
+// Add the changes to the staging area
+git add .
+
+// Commit the changes
+git commit -m "Initial commit"
+Q2)
+# Create a new branch named feature-greeting
+git checkout -b feature-greeting
+
+# Switch to the new branch
+git checkout feature-greeting
+
+# Add a new function in script.js that displays a personalized greeting
+# ... (code for the new function in script.js)
+
+# Commit the changes in the feature branch
+git add .
+git commit -m "Added a personalized greeting function"
+
+# Merge feature-greeting into the main branch
+git checkout main
+git merge feature-greeting
+
+# Switch back to the main branch
+git checkout main
+
+Q3)
+
+# Create a new branch named feature-update
+git checkout -b feature-update
+
+# Make changes to script.js
+# ...
+
+# Commit the changes in the feature branch
+git commit -m "Update script.js"
+
+# Switch back to the main branch
+git checkout main
+
+# Make different changes to script.js
+# ...
+
+# Commit the changes in the main branch
+git commit -m "More updates to script.js"
+
+# Attempt to merge feature-update into the main branch
+git merge feature-update
+
+# Resolve any merge conflicts that occur
+# ...
+
+Q4)
+# Create a new branch named feature-update
+git checkout -b feature-update
+
+# Make changes to script.js
+# ...
+
+# Commit the changes in the feature branch
+git commit -m "Update script.js"
+
+# Switch back to the main branch
+git checkout main
+
+# Make different changes to script.js
+# ...
+
+# Commit the changes in the main branch
+git commit -m "More updates to script.js"
+
+# Attempt to merge feature-update into the main branch
+git merge feature-update
+
+# Resolve any merge conflicts that occur
+# ...
+Q5)
+# Create a new branch named feature-update
+git checkout -b feature-update
+
+# Make changes to script.js
+# ...
+
+# Commit the changes in the feature branch
+git commit -m "feat: update script.js"
+
+# Switch back to the main branch
+git checkout main
+
+# Make different changes to script.js
+# ...
+
+# Commit the changes in the main branch
+git commit -m "fix: update script.js"
+
+# Attempt to merge feature-update into the main branch
+git merge feature-update
+
+# Resolve any merge conflicts that occur
+# ...
+
+# Push the changes to the remote repository
+git push
