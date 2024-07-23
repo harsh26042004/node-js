@@ -1,0 +1,70 @@
+1. What is a database? Explain with an example on why should we need a database.
+
+Definition: A database is an organized collection of structured information, or data, typically stored electronically in a computer system. It allows for efficient storage, retrieval, and management of information. Think of it as a digital filing cabinet.
+
+Example: Imagine you're running a bookstore. You need to keep track of:
+
+Books: Titles, authors, ISBNs, publication dates, prices, quantities in stock
+Customers: Names, addresses, purchase history
+Employees: Names, roles, contact details
+A database is crucial because it: * Organizes Information: Keeps data consistent and prevents duplication. * Facilitates Searching: Quickly finds specific books, customers, or employee records. * Enables Reporting: Generates sales reports, inventory summaries, etc.
+
+2. Write a short note on file based storage system. Explain the major challenges of a file based storage system?
+
+File-Based Storage: Data is stored in individual files, often with simple text or comma-separated values (CSV) formats.
+
+Challenges:
+
+Data Redundancy: The same information might be repeated in different files, leading to inconsistencies.
+Data Integrity: It's difficult to ensure data accuracy and prevent unauthorized modifications across multiple files.
+Difficult to Query: Retrieving specific information from multiple files can be complex and time-consuming.
+Limited Relationships: It's hard to represent relationships between different pieces of data.
+Concurrency Issues: Multiple users accessing the same data at the same time can lead to conflicts.
+3. What is DBMS? What was the need for DBMS?
+
+DBMS (Database Management System): A software application that allows users to create, maintain, and access databases. It provides a structured way to manage data and overcomes the challenges of file-based systems.
+
+Need for DBMS:
+
+Data Independence: Data is separated from the applications that access it, making it easier to modify the database without affecting applications.
+Data Integrity: Ensures data accuracy, consistency, and validity through constraints and validation rules.
+Data Security: Provides mechanisms for user authentication, access control, and data encryption.
+Concurrency Control: Manages multiple users accessing the database simultaneously, preventing data conflicts.
+4. Explain 5 challenges of file-based storage system which was tackled by DBMS?
+
+Data Redundancy: DBMS uses relational models to avoid duplicate data.
+Data Integrity: DBMS enforces data integrity rules, ensuring data is consistent and accurate.
+Difficult to Query: DBMS provides powerful query languages (like SQL) for easy data retrieval.
+Limited Relationships: DBMS supports relationships between tables to model complex connections.
+Concurrency Issues: DBMS implements concurrency control mechanisms to prevent conflicts during simultaneous access.
+5. List Out the different types of classification in DBMS and explain?
+
+Hierarchical DBMS: Data is organized in a tree-like structure with a parent-child relationship.
+Network DBMS: More flexible than hierarchical, allowing data to have multiple parent relationships.
+Relational DBMS: The most widely used type, organizing data into tables with relationships based on common fields.
+Object-Oriented DBMS: Stores data as objects with attributes and methods, suitable for complex data types.
+NoSQL DBMS: Not based on the relational model, offering flexibility for large-scale data and unstructured data.
+6. What is the significance of Data Modelling and explain the types of Data Modelling?
+
+Data Modelling: The process of creating a conceptual representation of data, outlining its structure, relationships, and constraints.
+
+Types of Data Modelling:
+
+Conceptual Data Modelling: Focuses on high-level understanding of data, independent of specific implementation details.
+Logical Data Modelling: Translates conceptual models into a structured format suitable for a DBMS.
+Physical Data Modelling: Defines how data will be physically stored in the database, including indexes, data types, and storage structures.
+7. Explain 3 schema architecture along with its advantages?
+
+Schema Architecture: Defines the structure and organization of data within a database.
+
+Types:
+
+External Schema: Represents the data as seen by specific users or applications. It provides a personalized view of the database.
+Conceptual Schema: Defines the overall structure of the database, including entities, attributes, and relationships.
+Internal Schema: Describes how data is physically stored in the database, including file organization, indexing, and data types.
+Advantages of Schema Architecture:
+
+Data Independence: Allows changes to one schema without affecting others.
+Data Security: Enables access control at different levels based on user roles.
+Data Integrity: Ensures consistency and accuracy by defining constraints across different schemas.
+These explanations should give you a good foundation to understand the key concepts related to databases and data management.
